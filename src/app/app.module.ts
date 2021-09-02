@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PostlistComponent } from './postlist/postlist.component';
+import { PostdetailComponent } from './details/postdetail/postdetail.component';
+import { Error404Component } from './error404/error404.component';
+import { CommentsComponent } from './details/comments/comments.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PostlistComponent,
+    PostdetailComponent,
+    Error404Component,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,

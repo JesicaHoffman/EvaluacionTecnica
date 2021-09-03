@@ -9,8 +9,17 @@ import { ActivatedRoute } from '@angular/router';
   providers: [PostService]
 })
 export class PostdetailComponent implements OnInit {
-
+  
   post:any;
+  fecha= new Date()
+  fechaActual=false;
+
+  getDate(){
+    this.fechaActual=true;
+    console.log(this.fecha);
+
+  }
+  
 
   constructor(
     public postservice:PostService,
@@ -28,6 +37,11 @@ export class PostdetailComponent implements OnInit {
       console.log(data)
       this.post=data
     })
+
+   
+
   }
+
+  
 
 }

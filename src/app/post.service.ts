@@ -17,7 +17,7 @@ export class PostService {
     return this.http.get("https://jsonplaceholder.typicode.com/posts/"+id)
   }
 
-  getCommentsById(){
-    return this.http.get("https://jsonplaceholder.typicode.com/comments/")
+  getCommentsById(id:any){
+    return this.http.get("https://jsonplaceholder.typicode.com/comments/"+id)
   }
 }

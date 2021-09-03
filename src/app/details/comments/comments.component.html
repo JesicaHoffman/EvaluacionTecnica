@@ -1,5 +1,13 @@
 <h4> COMENTARIOS </h4>
 
-<strong> comment.name  </strong>
+<div *ngFor="let comment of comments">
+<strong> {{comment.name}}  </strong>
 
-<p> comment.body </p>
+<p> {{comment.body}} </p>
+
+
+
+
+</div>
+
+<button (click)="getDate()">Emitir fecha</button>

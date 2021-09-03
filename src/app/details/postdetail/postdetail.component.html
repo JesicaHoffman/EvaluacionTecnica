@@ -1,4 +1,4 @@
-<p>postdetail works!</p>
+<div *ngIf="fechaActual"> {{fecha | date}} </div>
 
 <h1>Detail post: {{post.id}} </h1>
 
@@ -7,4 +7,5 @@
 <p> {{post.body}} </p>
 
 
-<app-comments></app-comments>
+<app-comments (click)= "getDate()" [fecha1]="fechaActual"></app-comments>
+

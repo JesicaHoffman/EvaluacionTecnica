@@ -8,6 +8,7 @@ import { PostlistComponent } from './postlist/postlist.component';
 import { PostdetailComponent } from './details/postdetail/postdetail.component';
 import { Error404Component } from './error404/error404.component';
 import { CommentsComponent } from './details/comments/comments.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CommentsComponent } from './details/comments/comments.component';
     PostlistComponent,
     PostdetailComponent,
     Error404Component,
-    CommentsComponent
+    CommentsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

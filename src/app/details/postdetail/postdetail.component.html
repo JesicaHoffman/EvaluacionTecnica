@@ -1,11 +1,11 @@
-<div *ngIf="fechaActual"> {{fecha | date}} </div>
+<div class="fecha" *ngIf="fechaActual"> {{fecha | date}} </div>
 
-<h1>Detail post: {{post.id}} </h1>
+<h4>Detail post: {{post.id}} </h4>
 
-<h3> {{post.title}} </h3>
+<h1> {{post.title}} </h1>
 
 <p> {{post.body}} </p>
 
 
-<app-comments (click)= "getDate()" [fecha1]="fechaActual"></app-comments>
+<app-comments (click)= "getDate()" [fecha1]="fechaActual" [id]="post.id"></app-comments>
 

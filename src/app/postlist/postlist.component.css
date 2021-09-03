@@ -1,8 +1,18 @@
+.titulo{
+    margin-left: 20%;
+}
 .table{
     width: 60%;
+    text-align: center;
     border: 1px solid black;
 }
 
-table, tr, th, td{
+tr, th, td{
     border: 1px solid black;
+}
+
+
+th{
+    background-color: burlywood;
+    height: 6vh;
 }

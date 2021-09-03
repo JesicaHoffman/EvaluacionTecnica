@@ -1,13 +1,12 @@
-<h4> COMENTARIOS </h4>
+<div class="box">
+<h2 class="comentarios"> COMENTARIOS </h2>
 
-<div *ngFor="let comment of comments">
-<strong> {{comment.name}}  </strong>
-
+<div *ngFor="let comment of commentsFilter">
+<strong> {{comment.email}}  </strong>
 <p> {{comment.body}} </p>
-
-
-
-
 </div>
 
+
 <button (click)="getDate()">Emitir fecha</button>
+
+</div>
